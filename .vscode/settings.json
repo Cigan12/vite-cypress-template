@@ -4,5 +4,8 @@
     },
     "eslint.validate": ["html", "javascript", "javascriptreact", "typescript"],
     "eslint.format.enable": true,
-    "eslint.run": "onSave"
+    "eslint.run": "onSave",
+    "path-autocomplete.pathMappings": {
+        "assets": "${folder}/src/assets"
+    }
 }

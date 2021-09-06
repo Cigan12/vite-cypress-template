@@ -6,6 +6,8 @@ module.exports = {
     extends: [
         'plugin:prettier/recommended',
         'plugin:react/recommended',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
         'airbnb',
     ],
     parser: '@typescript-eslint/parser',
@@ -16,7 +18,7 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'prettier'],
+    plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
     rules: {
         indent: 'off',
         'no-use-before-define': 'off',
@@ -36,9 +38,7 @@ module.exports = {
     },
     settings: {
         'import/resolver': {
-            node: {
-                extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            },
+            typescript: {},
         },
     },
 };

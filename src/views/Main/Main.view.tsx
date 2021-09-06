@@ -1,4 +1,8 @@
 import React from 'react';
-import { TestComponent } from '../../components/Test/Test.components';
+import { NavBar } from '../../components/NavBar/NavBar.component';
 
-export const MainView: React.FC = () => <TestComponent />;
+export const MainView: React.FC = () => (
+    <main>
+        <NavBar />
+    </main>
+);
